@@ -7,6 +7,8 @@ FaceAntiSpoofing(FaceAntiSpoofing.tflite), input: one Bitmap, output: float scor
   
 MobileFaceNet(MobileFaceNet.tflite), input: two Bitmaps, output: float score. Use this model to judge whether two face images are one person.  
   
+Android platform implementation: https://github.com/syaringan357/Android-MobileFaceNet-MTCNN-FaceAntiSpoofing
+  
 # DEPENDING
 https://github.com/vcvycy/MTCNN4Android  
 This project is the Android implementaion of MTCNN face detection.
