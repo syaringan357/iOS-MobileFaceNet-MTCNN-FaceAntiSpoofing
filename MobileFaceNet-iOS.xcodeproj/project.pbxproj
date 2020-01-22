@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D411CBB523CEE53000000154 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = D411CBB423CEE53000000154 /* Tools.m */; };
+		D411EBB0236A815B002CE5A0 /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = D411EBAF236A815B002CE5A0 /* ios_image_load.mm */; };
+		D486DCEB23CFFA200060C487 /* MTCNN.mm in Sources */ = {isa = PBXBuildFile; fileRef = D486DCEA23CFFA200060C487 /* MTCNN.mm */; };
+		D486DCEF23CFFA670060C487 /* onet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D486DCEE23CFFA480060C487 /* onet.tflite */; };
+		D486DCF023CFFA670060C487 /* pnet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D486DCEC23CFFA470060C487 /* pnet.tflite */; };
+		D486DCF123CFFA670060C487 /* rnet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D486DCED23CFFA480060C487 /* rnet.tflite */; };
+		D486DCF423D006600060C487 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = D486DCF323D006600060C487 /* Box.m */; };
+		D4AF3466236979E700374593 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF3465236979E700374593 /* AppDelegate.m */; };
+		D4AF3469236979E700374593 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF3468236979E700374593 /* SceneDelegate.m */; };
+		D4AF346C236979E700374593 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF346B236979E700374593 /* ViewController.m */; };
+		D4AF346F236979E700374593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AF346D236979E700374593 /* Main.storyboard */; };
+		D4AF3471236979EA00374593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AF3470236979EA00374593 /* Assets.xcassets */; };
+		D4AF3474236979EA00374593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AF3472236979EA00374593 /* LaunchScreen.storyboard */; };
+		D4AF3477236979EA00374593 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF3476236979EA00374593 /* main.m */; };
+		D4AF34872369817800374593 /* trump1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4AF34852369817700374593 /* trump1.jpg */; };
+		D4AF34882369817800374593 /* trump2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4AF34862369817800374593 /* trump2.jpg */; };
+		D4AF348C2369843E00374593 /* MobileFaceNet.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4AF348B2369843E00374593 /* MobileFaceNet.mm */; };
+		D4AF349323698EC500374593 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF349223698EC400374593 /* CoreGraphics.framework */; };
+		D4AF349523698ECB00374593 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF349423698ECA00374593 /* CoreImage.framework */; };
+		D4AF349623698F4600374593 /* MobileFaceNet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D4AF348D236986E200374593 /* MobileFaceNet.tflite */; };
+		D4F4FCC023D7D8B600028DD8 /* FaceAntiSpoofing.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4F4FCBF23D7D8B600028DD8 /* FaceAntiSpoofing.mm */; };
+		D4F4FCC123D7D8E500028DD8 /* FaceAntiSpoofing.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D4F4FCBD23D7D7D700028DD8 /* FaceAntiSpoofing.tflite */; };
+		F7FC4C20AAAF0AEBDCA3AFF3 /* libPods-MobileFaceNet-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5456014BBA7C29623088B3FE /* libPods-MobileFaceNet-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1791892EE3EB4ED21E1185DB /* Pods-MobileFaceNet-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileFaceNet-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileFaceNet-iOS/Pods-MobileFaceNet-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		5456014BBA7C29623088B3FE /* libPods-MobileFaceNet-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileFaceNet-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D411CBB323CEE53000000154 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		D411CBB423CEE53000000154 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		D411EBAE236A815B002CE5A0 /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = "<group>"; };
+		D411EBAF236A815B002CE5A0 /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
+		D486DCE923CFFA200060C487 /* MTCNN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCNN.h; sourceTree = "<group>"; };
+		D486DCEA23CFFA200060C487 /* MTCNN.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MTCNN.mm; sourceTree = "<group>"; };
+		D486DCEC23CFFA470060C487 /* pnet.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pnet.tflite; sourceTree = "<group>"; };
+		D486DCED23CFFA480060C487 /* rnet.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = rnet.tflite; sourceTree = "<group>"; };
+		D486DCEE23CFFA480060C487 /* onet.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = onet.tflite; sourceTree = "<group>"; };
+		D486DCF223D006600060C487 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		D486DCF323D006600060C487 /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		D4AF3461236979E700374593 /* MobileFaceNet-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MobileFaceNet-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AF3464236979E700374593 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D4AF3465236979E700374593 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D4AF3467236979E700374593 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D4AF3468236979E700374593 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D4AF346A236979E700374593 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D4AF346B236979E700374593 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D4AF346E236979E700374593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4AF3470236979EA00374593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4AF3473236979EA00374593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4AF3475236979EA00374593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4AF3476236979EA00374593 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4AF34852369817700374593 /* trump1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trump1.jpg; sourceTree = "<group>"; };
+		D4AF34862369817800374593 /* trump2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trump2.jpg; sourceTree = "<group>"; };
+		D4AF348A2369843E00374593 /* MobileFaceNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileFaceNet.h; sourceTree = "<group>"; };
+		D4AF348B2369843E00374593 /* MobileFaceNet.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MobileFaceNet.mm; sourceTree = "<group>"; };
+		D4AF348D236986E200374593 /* MobileFaceNet.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MobileFaceNet.tflite; sourceTree = "<group>"; };
+		D4AF349223698EC400374593 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4AF349423698ECA00374593 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D4F4FCBD23D7D7D700028DD8 /* FaceAntiSpoofing.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaceAntiSpoofing.tflite; sourceTree = "<group>"; };
+		D4F4FCBE23D7D8B600028DD8 /* FaceAntiSpoofing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceAntiSpoofing.h; sourceTree = "<group>"; };
+		D4F4FCBF23D7D8B600028DD8 /* FaceAntiSpoofing.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceAntiSpoofing.mm; sourceTree = "<group>"; };
+		D8CA54D9E8CC2FD1212806E7 /* Pods-MobileFaceNet-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileFaceNet-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileFaceNet-iOS/Pods-MobileFaceNet-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4AF345E236979E700374593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AF349323698EC500374593 /* CoreGraphics.framework in Frameworks */,
+				D4AF349523698ECB00374593 /* CoreImage.framework in Frameworks */,
+				F7FC4C20AAAF0AEBDCA3AFF3 /* libPods-MobileFaceNet-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FFB788C8BA28A1155D4FDAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA54D9E8CC2FD1212806E7 /* Pods-MobileFaceNet-iOS.debug.xcconfig */,
+				1791892EE3EB4ED21E1185DB /* Pods-MobileFaceNet-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D411CBB223CEE50400000154 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				D411EBAE236A815B002CE5A0 /* ios_image_load.h */,
+				D411EBAF236A815B002CE5A0 /* ios_image_load.mm */,
+				D411CBB323CEE53000000154 /* Tools.h */,
+				D411CBB423CEE53000000154 /* Tools.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		D486DCE823CFF9710060C487 /* mtcnn */ = {
+			isa = PBXGroup;
+			children = (
+				D486DCEE23CFFA480060C487 /* onet.tflite */,
+				D486DCEC23CFFA470060C487 /* pnet.tflite */,
+				D486DCED23CFFA480060C487 /* rnet.tflite */,
+				D486DCE923CFFA200060C487 /* MTCNN.h */,
+				D486DCEA23CFFA200060C487 /* MTCNN.mm */,
+				D486DCF223D006600060C487 /* Box.h */,
+				D486DCF323D006600060C487 /* Box.m */,
+			);
+			path = mtcnn;
+			sourceTree = "<group>";
+		};
+		D4AF3458236979E700374593 = {
+			isa = PBXGroup;
+			children = (
+				D4AF3463236979E700374593 /* MobileFaceNet-iOS */,
+				D4AF3462236979E700374593 /* Products */,
+				7FFB788C8BA28A1155D4FDAF /* Pods */,
+				FD6AB6D5D2163FA77E23F058 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D4AF3462236979E700374593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4AF3461236979E700374593 /* MobileFaceNet-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4AF3463236979E700374593 /* MobileFaceNet-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D4F4FCBC23D7D64400028DD8 /* faceAntiSpoofing */,
+				D4AF34892369840F00374593 /* mobileFaceNet */,
+				D486DCE823CFF9710060C487 /* mtcnn */,
+				D411CBB223CEE50400000154 /* utils */,
+				D4AF34852369817700374593 /* trump1.jpg */,
+				D4AF34862369817800374593 /* trump2.jpg */,
+				D4AF3464236979E700374593 /* AppDelegate.h */,
+				D4AF3465236979E700374593 /* AppDelegate.m */,
+				D4AF3467236979E700374593 /* SceneDelegate.h */,
+				D4AF3468236979E700374593 /* SceneDelegate.m */,
+				D4AF346A236979E700374593 /* ViewController.h */,
+				D4AF346B236979E700374593 /* ViewController.m */,
+				D4AF346D236979E700374593 /* Main.storyboard */,
+				D4AF3470236979EA00374593 /* Assets.xcassets */,
+				D4AF3472236979EA00374593 /* LaunchScreen.storyboard */,
+				D4AF3475236979EA00374593 /* Info.plist */,
+				D4AF3476236979EA00374593 /* main.m */,
+			);
+			path = "MobileFaceNet-iOS";
+			sourceTree = "<group>";
+		};
+		D4AF34892369840F00374593 /* mobileFaceNet */ = {
+			isa = PBXGroup;
+			children = (
+				D4AF348D236986E200374593 /* MobileFaceNet.tflite */,
+				D4AF348A2369843E00374593 /* MobileFaceNet.h */,
+				D4AF348B2369843E00374593 /* MobileFaceNet.mm */,
+			);
+			path = mobileFaceNet;
+			sourceTree = "<group>";
+		};
+		D4F4FCBC23D7D64400028DD8 /* faceAntiSpoofing */ = {
+			isa = PBXGroup;
+			children = (
+				D4F4FCBD23D7D7D700028DD8 /* FaceAntiSpoofing.tflite */,
+				D4F4FCBE23D7D8B600028DD8 /* FaceAntiSpoofing.h */,
+				D4F4FCBF23D7D8B600028DD8 /* FaceAntiSpoofing.mm */,
+			);
+			path = faceAntiSpoofing;
+			sourceTree = "<group>";
+		};
+		FD6AB6D5D2163FA77E23F058 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AF349423698ECA00374593 /* CoreImage.framework */,
+				D4AF349223698EC400374593 /* CoreGraphics.framework */,
+				5456014BBA7C29623088B3FE /* libPods-MobileFaceNet-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4AF3460236979E700374593 /* MobileFaceNet-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4AF347A236979EA00374593 /* Build configuration list for PBXNativeTarget "MobileFaceNet-iOS" */;
+			buildPhases = (
+				353970808DE992D7E87F63C5 /* [CP] Check Pods Manifest.lock */,
+				D4AF345D236979E700374593 /* Sources */,
+				D4AF345E236979E700374593 /* Frameworks */,
+				D4AF345F236979E700374593 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MobileFaceNet-iOS";
+			productName = "MobileFaceNet-iOS";
+			productReference = D4AF3461236979E700374593 /* MobileFaceNet-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4AF3459236979E700374593 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "周文鹏";
+				TargetAttributes = {
+					D4AF3460236979E700374593 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = D4AF345C236979E700374593 /* Build configuration list for PBXProject "MobileFaceNet-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4AF3458236979E700374593;
+			productRefGroup = D4AF3462236979E700374593 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4AF3460236979E700374593 /* MobileFaceNet-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4AF345F236979E700374593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F4FCC123D7D8E500028DD8 /* FaceAntiSpoofing.tflite in Resources */,
+				D486DCEF23CFFA670060C487 /* onet.tflite in Resources */,
+				D486DCF023CFFA670060C487 /* pnet.tflite in Resources */,
+				D486DCF123CFFA670060C487 /* rnet.tflite in Resources */,
+				D4AF349623698F4600374593 /* MobileFaceNet.tflite in Resources */,
+				D4AF3474236979EA00374593 /* LaunchScreen.storyboard in Resources */,
+				D4AF3471236979EA00374593 /* Assets.xcassets in Resources */,
+				D4AF34882369817800374593 /* trump2.jpg in Resources */,
+				D4AF346F236979E700374593 /* Main.storyboard in Resources */,
+				D4AF34872369817800374593 /* trump1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		353970808DE992D7E87F63C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileFaceNet-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4AF345D236979E700374593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D486DCF423D006600060C487 /* Box.m in Sources */,
+				D411CBB523CEE53000000154 /* Tools.m in Sources */,
+				D4AF346C236979E700374593 /* ViewController.m in Sources */,
+				D486DCEB23CFFA200060C487 /* MTCNN.mm in Sources */,
+				D4AF348C2369843E00374593 /* MobileFaceNet.mm in Sources */,
+				D4AF3466236979E700374593 /* AppDelegate.m in Sources */,
+				D4AF3477236979EA00374593 /* main.m in Sources */,
+				D4AF3469236979E700374593 /* SceneDelegate.m in Sources */,
+				D411EBB0236A815B002CE5A0 /* ios_image_load.mm in Sources */,
+				D4F4FCC023D7D8B600028DD8 /* FaceAntiSpoofing.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D4AF346D236979E700374593 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4AF346E236979E700374593 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4AF3472236979EA00374593 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4AF3473236979EA00374593 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4AF3478236979EA00374593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4AF3479236979EA00374593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4AF347B236979EA00374593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8CA54D9E8CC2FD1212806E7 /* Pods-MobileFaceNet-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX95PDD3EM;
+				INFOPLIST_FILE = "MobileFaceNet-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zwp.MobileFaceNet-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4AF347C236979EA00374593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1791892EE3EB4ED21E1185DB /* Pods-MobileFaceNet-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX95PDD3EM;
+				INFOPLIST_FILE = "MobileFaceNet-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zwp.MobileFaceNet-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4AF345C236979E700374593 /* Build configuration list for PBXProject "MobileFaceNet-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AF3478236979EA00374593 /* Debug */,
+				D4AF3479236979EA00374593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4AF347A236979EA00374593 /* Build configuration list for PBXNativeTarget "MobileFaceNet-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AF347B236979EA00374593 /* Debug */,
+				D4AF347C236979EA00374593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4AF3459236979E700374593 /* Project object */;
+}

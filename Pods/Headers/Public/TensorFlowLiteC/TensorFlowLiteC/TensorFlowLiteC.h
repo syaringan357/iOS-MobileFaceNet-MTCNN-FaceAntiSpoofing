@@ -1,0 +1,1 @@
+../../../../TensorFlowLiteC/Frameworks/TensorFlowLiteC.framework/Headers/TensorFlowLiteC.h
