@@ -1,11 +1,11 @@
 # MobileFaceNet-iOS
 This project includes three models.  
   
-MTCNN(pnet.tflite, rnet.tflite, onet.tflite), input: one Bitmap, output: Box. Use this model to detect faces from an image.  
+MTCNN(pnet.tflite, rnet.tflite, onet.tflite), input: one UIImage, output: Box. Use this model to detect faces from an image.  
   
-FaceAntiSpoofing(FaceAntiSpoofing.tflite), input: one Bitmap, output: float score. Use this model to determine whether the image is an attack.  
+FaceAntiSpoofing(FaceAntiSpoofing.tflite), input: one UIImage, output: float score. Use this model to determine whether the image is an attack.  
   
-MobileFaceNet(MobileFaceNet.tflite), input: two Bitmaps, output: float score. Use this model to judge whether two face images are one person.  
+MobileFaceNet(MobileFaceNet.tflite), input: two UIImages, output: float score. Use this model to judge whether two face images are one person.  
   
 Android platform implementation: https://github.com/syaringan357/Android-MobileFaceNet-MTCNN-FaceAntiSpoofing
   
