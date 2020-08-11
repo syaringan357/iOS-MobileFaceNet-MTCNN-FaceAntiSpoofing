@@ -84,7 +84,10 @@ static int embeddings_size = 192; // 输出的embedding维度
     float *output = new float[2 * embeddings_size];
     [outputData getBytes:output length:(sizeof(float) * 2 * embeddings_size)];
     [self l2Normalize:output epsilon:1e-10];
-    return [self evaluate:output];
+    float result = [self evaluate:output];
+    delete [] output;
+    
+    return result;
 }
 
 /**
@@ -111,8 +114,12 @@ static int embeddings_size = 192; // 输出的embedding维度
             k++;
         }
     }
+    free(image_data1);
+    free(image_data2);
     
     NSData *data = [NSData dataWithBytes:floats length:sizeof(float) * 2 * image_width * image_height * 3];
+    delete [] floats;
+    
     return data;
 }
 

@@ -90,6 +90,9 @@ static int image_height = 256; // input图片高
     for (int i = 0; i < 8; i++) {
         score += abs(clss_pred[i]) * leaf_node_mask[i];
     }
+    delete [] clss_pred;
+    delete [] leaf_node_mask;
+    
     return score;
 }
 
@@ -111,8 +114,11 @@ static int image_height = 256; // input图片高
         floats[k] = image_data[j] / input_std;
         k++;
     }
+    free(image_data);
     
     NSData *data = [NSData dataWithBytes:floats length:sizeof(float) * image_width * image_height * 3];
+    delete [] floats;
+    
     return data;
 }
 

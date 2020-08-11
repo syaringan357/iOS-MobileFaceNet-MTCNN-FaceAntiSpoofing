@@ -122,6 +122,9 @@ static float o_net_threshold = 0.7f;
         
         // Face Size等比递增
         currentFaceSize /= factor;
+        
+        delete [] prob1;
+        delete [] conv4_2_BiasAdd;
     }
     
     // NMS 0.7
@@ -141,6 +144,7 @@ static float o_net_threshold = 0.7f;
     float *floats = [self normalizeImage:image W:w H:h];
     [self transpose:floats H:h W:w C:3];  // 转置
     NSData *data = [NSData dataWithBytes:floats length:sizeof(float) * w * h * 3];
+    delete [] floats;
 
     // 前向传播
     NSArray<NSNumber *> *shape = @[@1, @(w), @(h), @3];
@@ -201,8 +205,10 @@ static float o_net_threshold = 0.7f;
             floats[k] = img_data[j];
             k++;
         }
+        delete [] img_data;
     }
     NSData *data = [NSData dataWithBytes:floats length:sizeof(float) * num * 24 * 24 * 3];
+    delete [] floats;
     
     // Run RNet
     [self rNetForward:data boxes:boxes];
@@ -273,6 +279,8 @@ static float o_net_threshold = 0.7f;
             boxes[i].bbr[j] = @(conv5_2_conv5_2[i * 4 + j]);
         }
     }
+    delete [] prob1;
+    delete [] conv5_2_conv5_2;
 }
 
 /**
@@ -291,8 +299,10 @@ static float o_net_threshold = 0.7f;
             floats[k] = img_data[j];
             k++;
         }
+        delete [] img_data;
     }
     NSData *data = [NSData dataWithBytes:floats length:sizeof(float) * num * 48 * 48 * 3];
+    delete [] floats;
     
     // Run ONet
     [self oNetForward:data boxes:boxes];
@@ -377,6 +387,9 @@ static float o_net_threshold = 0.7f;
             boxes[i].landmark[j] = @(CGPointMake(x, y));
         }
     }
+    delete [] prob1;
+    delete [] conv6_2_conv6_2;
+    delete [] conv6_3_conv6_3;
 }
 
 /**
@@ -495,6 +508,7 @@ static float o_net_threshold = 0.7f;
         floats[k] = (image_data[j] - input_mean) / input_std;
         k++;
     }
+    free(image_data);
     
     return floats;
 }
@@ -514,6 +528,7 @@ static float o_net_threshold = 0.7f;
             }
         }
     }
+    delete [] tmp;
 }
 
 @end
