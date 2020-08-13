@@ -26,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 裁剪图片
 + (UIImage *)cropImage:(UIImage *)image toRect:(CGRect)rect;
 
+// UIImage转灰度图
++ (UInt8 *)convertUIImageToBitmapGray:(UIImage *)image;
+
 @end
 
 NS_ASSUME_NONNULL_END

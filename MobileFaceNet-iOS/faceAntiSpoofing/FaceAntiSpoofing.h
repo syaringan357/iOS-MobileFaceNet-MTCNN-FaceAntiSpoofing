@@ -9,12 +9,15 @@
 #import <UIKit/UIKit.h>
 
 static float fas_threshold = 0.2f; // 设置一个阙值，大于这个值认为是攻击
+static int laplacian_threshold = 1000; // 图片清晰度判断阙值
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FaceAntiSpoofing : NSObject
 
 - (float)antiSpoofing:(UIImage *)image;
+- (int)laplacian:(UIImage *)image;
 
 @end
 

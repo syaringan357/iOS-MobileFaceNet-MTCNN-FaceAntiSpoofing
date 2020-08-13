@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D411CBB523CEE53000000154 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = D411CBB423CEE53000000154 /* Tools.m */; };
 		D411EBB0236A815B002CE5A0 /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = D411EBAF236A815B002CE5A0 /* ios_image_load.mm */; };
+		D46B1C9824E51DE200DACDA4 /* gray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D46B1C9724E51DE200DACDA4 /* gray.jpg */; };
 		D486DCEB23CFFA200060C487 /* MTCNN.mm in Sources */ = {isa = PBXBuildFile; fileRef = D486DCEA23CFFA200060C487 /* MTCNN.mm */; };
 		D486DCEF23CFFA670060C487 /* onet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D486DCEE23CFFA480060C487 /* onet.tflite */; };
 		D486DCF023CFFA670060C487 /* pnet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D486DCEC23CFFA470060C487 /* pnet.tflite */; };
@@ -39,6 +40,7 @@
 		D411CBB423CEE53000000154 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		D411EBAE236A815B002CE5A0 /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = "<group>"; };
 		D411EBAF236A815B002CE5A0 /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
+		D46B1C9724E51DE200DACDA4 /* gray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gray.jpg; sourceTree = "<group>"; };
 		D486DCE923CFFA200060C487 /* MTCNN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCNN.h; sourceTree = "<group>"; };
 		D486DCEA23CFFA200060C487 /* MTCNN.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MTCNN.mm; sourceTree = "<group>"; };
 		D486DCEC23CFFA470060C487 /* pnet.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pnet.tflite; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				D411CBB223CEE50400000154 /* utils */,
 				D4AF34852369817700374593 /* trump1.jpg */,
 				D4AF34862369817800374593 /* trump2.jpg */,
+				D46B1C9724E51DE200DACDA4 /* gray.jpg */,
 				D4AF3464236979E700374593 /* AppDelegate.h */,
 				D4AF3465236979E700374593 /* AppDelegate.m */,
 				D4AF3467236979E700374593 /* SceneDelegate.h */,
@@ -251,6 +254,7 @@
 			files = (
 				D4F4FCC123D7D8E500028DD8 /* FaceAntiSpoofing.tflite in Resources */,
 				D486DCEF23CFFA670060C487 /* onet.tflite in Resources */,
+				D46B1C9824E51DE200DACDA4 /* gray.jpg in Resources */,
 				D486DCF023CFFA670060C487 /* pnet.tflite in Resources */,
 				D486DCF123CFFA670060C487 /* rnet.tflite in Resources */,
 				D4AF349623698F4600374593 /* MobileFaceNet.tflite in Resources */,

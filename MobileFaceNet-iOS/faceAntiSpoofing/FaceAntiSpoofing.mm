@@ -15,7 +15,7 @@ static NSString * modelFileType = @"tflite";
 
 static int image_width = 256; // input图片宽
 static int image_height = 256; // input图片高
-
+static int laplace_threshold = 50; // 拉普拉斯采样阙值
 
 @interface FaceAntiSpoofing()
 
@@ -48,7 +48,7 @@ static int image_height = 256; // input图片高
 }
 
 /**
- 比较两张人脸图片
+ 反欺骗
  */
 - (float)antiSpoofing:(UIImage *)image {
     CGSize size = CGSizeMake(image_width, image_height);
@@ -120,6 +120,33 @@ static int image_height = 256; // input图片高
     delete [] floats;
     
     return data;
+}
+
+/**
+ 拉普拉斯算法计算清晰度
+ */
+- (int)laplacian:(UIImage *)image {
+    UInt8 *image_data = [Tools convertUIImageToBitmapGray:image];
+    int laplace[3][3] = {{0, 1, 0}, {1, -4, 1}, {0, 1, 0}};
+
+    int score = 0;
+    for (int x = 0; x < image_height - 3 + 1; x++){
+        for (int y = 0; y < image_width - 3 + 1; y++){
+            int result = 0;
+            // 对size*size区域进行卷积操作
+            for (int i = 0; i < 3; i++){
+                for (int j = 0; j < 3; j++){
+                    result += (image_data[(x + i) * image_width + y + j] & 0xFF) * laplace[i][j];
+                }
+            }
+            if (result > laplace_threshold) {
+                score++;
+            }
+        }
+    }
+    free(image_data);
+    
+    return score;
 }
 
 @end
