@@ -10,6 +10,8 @@
 		D411CBB523CEE53000000154 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = D411CBB423CEE53000000154 /* Tools.m */; };
 		D411EBB0236A815B002CE5A0 /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = D411EBAF236A815B002CE5A0 /* ios_image_load.mm */; };
 		D46B1C9824E51DE200DACDA4 /* gray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D46B1C9724E51DE200DACDA4 /* gray.jpg */; };
+		D46B1C9B24E61CC400DACDA4 /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B1C9A24E61CC400DACDA4 /* VideoController.m */; };
+		D46B1C9D24E622E700DACDA4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46B1C9C24E622E700DACDA4 /* AVFoundation.framework */; };
 		D486DCEB23CFFA200060C487 /* MTCNN.mm in Sources */ = {isa = PBXBuildFile; fileRef = D486DCEA23CFFA200060C487 /* MTCNN.mm */; };
 		D486DCEF23CFFA670060C487 /* onet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D486DCEE23CFFA480060C487 /* onet.tflite */; };
 		D486DCF023CFFA670060C487 /* pnet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D486DCEC23CFFA470060C487 /* pnet.tflite */; };
@@ -41,6 +43,9 @@
 		D411EBAE236A815B002CE5A0 /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = "<group>"; };
 		D411EBAF236A815B002CE5A0 /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
 		D46B1C9724E51DE200DACDA4 /* gray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gray.jpg; sourceTree = "<group>"; };
+		D46B1C9924E61CC400DACDA4 /* VideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoController.h; sourceTree = "<group>"; };
+		D46B1C9A24E61CC400DACDA4 /* VideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoController.m; sourceTree = "<group>"; };
+		D46B1C9C24E622E700DACDA4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D486DCE923CFFA200060C487 /* MTCNN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCNN.h; sourceTree = "<group>"; };
 		D486DCEA23CFFA200060C487 /* MTCNN.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MTCNN.mm; sourceTree = "<group>"; };
 		D486DCEC23CFFA470060C487 /* pnet.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pnet.tflite; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D46B1C9D24E622E700DACDA4 /* AVFoundation.framework in Frameworks */,
 				D4AF349323698EC500374593 /* CoreGraphics.framework in Frameworks */,
 				D4AF349523698ECB00374593 /* CoreImage.framework in Frameworks */,
 				F7FC4C20AAAF0AEBDCA3AFF3 /* libPods-MobileFaceNet-iOS.a in Frameworks */,
@@ -155,6 +161,8 @@
 				D4AF3468236979E700374593 /* SceneDelegate.m */,
 				D4AF346A236979E700374593 /* ViewController.h */,
 				D4AF346B236979E700374593 /* ViewController.m */,
+				D46B1C9924E61CC400DACDA4 /* VideoController.h */,
+				D46B1C9A24E61CC400DACDA4 /* VideoController.m */,
 				D4AF346D236979E700374593 /* Main.storyboard */,
 				D4AF3470236979EA00374593 /* Assets.xcassets */,
 				D4AF3472236979EA00374593 /* LaunchScreen.storyboard */,
@@ -187,6 +195,7 @@
 		FD6AB6D5D2163FA77E23F058 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D46B1C9C24E622E700DACDA4 /* AVFoundation.framework */,
 				D4AF349423698ECA00374593 /* CoreImage.framework */,
 				D4AF349223698EC400374593 /* CoreGraphics.framework */,
 				5456014BBA7C29623088B3FE /* libPods-MobileFaceNet-iOS.a */,
@@ -302,6 +311,7 @@
 				D411CBB523CEE53000000154 /* Tools.m in Sources */,
 				D4AF346C236979E700374593 /* ViewController.m in Sources */,
 				D486DCEB23CFFA200060C487 /* MTCNN.mm in Sources */,
+				D46B1C9B24E61CC400DACDA4 /* VideoController.m in Sources */,
 				D4AF348C2369843E00374593 /* MobileFaceNet.mm in Sources */,
 				D4AF3466236979E700374593 /* AppDelegate.m in Sources */,
 				D4AF3477236979EA00374593 /* main.m in Sources */,

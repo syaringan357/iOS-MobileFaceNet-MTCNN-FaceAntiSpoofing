@@ -126,7 +126,9 @@ static int laplace_threshold = 50; // 拉普拉斯采样阙值
  拉普拉斯算法计算清晰度
  */
 - (int)laplacian:(UIImage *)image {
-    UInt8 *image_data = [Tools convertUIImageToBitmapGray:image];
+    CGSize size = CGSizeMake(image_width, image_height);
+    UIImage *imageScale = [Tools scaleImage:image toSize:size];
+    UInt8 *image_data = [Tools convertUIImageToBitmapGray:imageScale];
     int laplace[3][3] = {{0, 1, 0}, {1, -4, 1}, {0, 1, 0}};
 
     int score = 0;
