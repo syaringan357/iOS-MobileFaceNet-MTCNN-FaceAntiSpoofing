@@ -18,7 +18,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GR-KY-aaT">
                                 <rect key="frame" x="156.5" y="395" width="62" height="30"/>
-                                <state key="normal" title="录入信息"/>
+                                <state key="normal" title="录入信息">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="inputFace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S8S-Q5-5Jb"/>
                                 </connections>
@@ -26,12 +28,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="比对结果" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCz-uu-myK">
                                 <rect key="frame" x="153" y="515" width="69.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qu2-ft-xsd">
                                 <rect key="frame" x="156.5" y="445" width="62" height="30"/>
-                                <state key="normal" title="人脸识别"/>
+                                <state key="normal" title="人脸识别">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="compareFace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhi-w1-coK"/>
                                 </connections>
@@ -43,7 +47,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Qu2-ft-xsd" firstAttribute="top" secondItem="3GR-KY-aaT" secondAttribute="bottom" constant="20" id="8E4-VD-lNB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eLk-ve-E9F" secondAttribute="trailing" constant="20" id="F6u-m8-z7b"/>
